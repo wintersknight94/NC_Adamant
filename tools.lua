@@ -18,7 +18,7 @@ local function toolhead(name, groups, prills)
 	nodecore.register_lode("toolhead_" .. n, {
 			type = "craft",
 			description = "## Adamant " .. name .. " Head",
-			inventory_image = modname .. "_#.png^[mask:nc_lode_toolhead_" .. n .. ".png",
+			inventory_image = modname .. "_#.png^[mask:nc_adamant_toolhead_" .. n .. ".png",
 			stack_max = 1
 		})
 
@@ -26,12 +26,12 @@ local function toolhead(name, groups, prills)
 			type = "tool",
 			description = "## Adamant " .. name,
 			inventory_image = ("nc_lode_tempered.png^[mask:nc_adamant_mask_tool_handle.png^(" ..
-			modname .. "_#.png^[mask:nc_lode_tool_" .. n .. ".png)"),
+			modname .. "_#.png^[mask:nc_adamant_tool_" .. n .. ".png)"),
 			stack_max = 1,
 			tool_capabilities = toolcap(6),
 			bytemper = function(t, d)
 				if t.name == "tempered" then
-					d.tool_capabilities = toolcap(7)
+					d.tool_capabilities = toolcap(100)
 				end
 				d.skip_register = (t.name == "hot") or nil
 			end,
@@ -77,7 +77,7 @@ local function forgecore(from, fromqty, to, prills, fromtemper, anviltemper)
 					y = -1,
 					match = {
 					metal_temper_cool = true,
-					groups = {metal_block = true}
+					groups = {metal_cube = true}
 				},
 				}
 			},

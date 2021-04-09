@@ -8,7 +8,7 @@ local modname = minetest.get_current_modname()
 nodecore.register_craft({
 		label = "heat adamant cobble",
 		action = "cook",
-		touchgroups = {flame = 3},
+		touchgroups = {lava = 3},
 		duration = 60,
 		cookfx = true,
 		nodes = {
@@ -36,7 +36,7 @@ nodecore.register_limited_abm({
 nodecore.register_craft({
 		label = "adamant ore cooling",
 		action = "cook",
-		touchgroups = {flame = 0},
+		touchgroups = {lava = 0, flame = 0},
 		duration = 150,
 		priority = -1,
 		cookfx = {smoke = true, hiss = true},
@@ -64,5 +64,5 @@ nodecore.register_craft({
 		}
 	})
 
-nodecore.register_cook_abm({nodenames = {"group:adamant_cobble"}, neighbors = {"group:flame"}})
+nodecore.register_cook_abm({nodenames = {"group:adamant_cobble"}, neighbors = {"group:lava"}})
 nodecore.register_cook_abm({nodenames = {modname .. ":cobble_hot"}})
