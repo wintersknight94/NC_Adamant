@@ -31,7 +31,7 @@ local function toolhead(name, groups, prills)
 			tool_capabilities = toolcap(6),
 			bytemper = function(t, d)
 				if t.name == "tempered" then
-					d.tool_capabilities = toolcap(100)
+					d.tool_capabilities = toolcap(8)
 				end
 				d.skip_register = (t.name == "hot") or nil
 			end,

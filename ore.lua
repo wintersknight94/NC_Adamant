@@ -8,14 +8,14 @@ local modname = minetest.get_current_modname()
 
 minetest.register_node(modname.. ":ore", {
 	description = ("Adamant Ore"),
-	drawtype = "liquid",
+--	drawtype = "liquid",
 	tiles = {"nc_terrain_stone.png^(" .. modname .. "_ore.png^[mask:" .. modname .. "_mask_ore.png)"},
 	groups = {
 		adamanty = 1,
 		cracky = 7,
 		hard_stone = 6
 	},
-	light_source = 24,
+--	light_source = 24,
 	drop_in_place = modname .. ":cobble",
 	sounds = nodecore.sounds("nc_terrain_stony")
 })
