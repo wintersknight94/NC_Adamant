@@ -5,7 +5,7 @@ local minetest, nodecore
 
 local modname = minetest.get_current_modname()
 
-nodecore.register_lode("Bar", {
+nodecore.register_adamant("Bar", {
 		["type"] = "node",
 		description = "## Adamant Bar",
 		drawtype = "nodebox",
@@ -65,7 +65,7 @@ nodecore.register_craft({
 		}
 	})
 
-nodecore.register_lode("Rod", {
+nodecore.register_adamant("Rod", {
 		["type"] = "node",
 		description = "## Adamant Rod",
 		drawtype = "nodebox",

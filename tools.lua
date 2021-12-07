@@ -15,14 +15,14 @@ local function toolhead(name, groups, prills)
 		return nodecore.toolcaps(t)
 	end
 
-	nodecore.register_lode("toolhead_" .. n, {
+	nodecore.register_adamant("toolhead_" .. n, {
 			type = "craft",
 			description = "## Adamant " .. name .. " Head",
 			inventory_image = modname .. "_#.png^[mask:nc_adamant_toolhead_" .. n .. ".png",
 			stack_max = 1
 		})
 
-	nodecore.register_lode("tool_" .. n, {
+	nodecore.register_adamant("tool_" .. n, {
 			type = "tool",
 			description = "## Adamant " .. name,
 			inventory_image = ("nc_lode_tempered.png^[mask:nc_adamant_mask_tool_handle.png^(" ..
