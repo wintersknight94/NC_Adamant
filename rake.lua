@@ -29,7 +29,7 @@ local function mkonrake(toolcaps)
 end
 nodecore.lode_rake_function = mkonrake
 
-nodecore.register_lode("rake", {
+nodecore.register_adamant("rake", {
 		type = "tool",
 		description = "## Adamant Rake",
 		inventory_image = modname .. "_#.png^[mask:nc_lode_rake.png",

@@ -12,7 +12,7 @@ local function addzecaps(lv)
 			cracky = lv - 2
 		})
 end
-nodecore.register_lode("adze", {
+nodecore.register_adamant("adze", {
 		type = "tool",
 		description = "## Adamant Adze",
 		inventory_image = modname .. "_#.png^[mask:nc_lode_adze.png",
